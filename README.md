@@ -28,8 +28,8 @@ However the easiest way I have tried so far is using a npm package called `elect
 
 Now you can build Wallet-electron by typing:
 
-electron-packager /<directory> --platform=win32 --arch=x64 --out=releases/ --app-version=0.0.1
+electron-packager /'directory' --platform=win32 --arch=x64 --out=releases/ --app-version=0.0.1
 
-Where `<directory>` is the path to your folder and `--out` is the path to the folder where the app is going to be generated.
+Where `directory` is the path to your folder and `--out` is the path to the folder where the app is going to be generated.
 
 Using that command will generate a build for the platform and architecture you are currently using. You can use the `--platform=<platform>` and `--arch=<arch>` optional flags if you want to build it for something else. You can check https://github.com/electron-userland/electron-packager for extra info regarding this tool.
