@@ -26,6 +26,8 @@ You can build it manually following the [Application Distribution](https://elect
 
 However the easiest way I have tried so far is using a npm package called `electron-packager`. In order to do so you need to install it globally by typing `npm install electron-packager -g`. 
 
+npm install
+
 Now you can build Wallet-electron by typing:
 
 electron-packager /'directory' --platform=win32 --arch=x64 --out=releases/ --app-version=0.0.1
