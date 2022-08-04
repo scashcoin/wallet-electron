@@ -20,15 +20,15 @@ Array.prototype.forEach.call(sectionButtons, function (button) {
     button.addEventListener('click', function(event) {
         walletdPath.value = settings.get('walletdPath') ? settings.get('walletdPath') : ''
         rpcPassword.value = settings.get('rpcPassword') ? settings.get('rpcPassword') : ''
-        nodeAddress.value = settings.get('nodeAddress') ? settings.get('nodeAddress') : ''
-        nodePort.value = settings.get('nodePort') ? settings.get('nodePort') : ''
+        nodeAddress.value = settings.get('nodeAddress') ? settings.get('nodeAddress') : '51.75.124.158'
+        nodePort.value = settings.get('nodePort') ? settings.get('nodePort') : '31001'
 
         if(settings.get('usePublicNode')) {
             nodeCheckbox.checked = true
             nodeAddress.disabled = false
             nodePort.disabled = false
         } else {
-            nodeCheckbox.checked = false
+            nodeCheckbox.checked = true
             nodeAddress.disabled = true
             nodePort.disabled = true
         }
